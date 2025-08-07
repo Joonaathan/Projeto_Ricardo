@@ -1,81 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Gaiolas do João</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos do Ricardo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Gaiolas Artesanais do João</h1>
-        <p>Feitas com solda e perfeição para seus passarinhos</p>
-    </header>
 
-    <section id="sobre">
-        <h2>Sobre o João</h2>
-        <p>João trabalha há mais de 20 anos fabricando gaiolas de ferro com acabamento artesanal e solda de qualidade. Cada peça é feita com carinho e precisão.</p>
-    </section>
+  <!-- TOPO -->
+  <header>
+    <h1>Produtos do Ricardo</h1>
+    <nav>
+      <a href="#varais">Varais</a>
+      <a href="#gaiolas">Gaiolas</a>
+      <a href="#banquetas">Banquetas</a>
+    </nav>
 
-    <section id="gaiolas">
-        <h2>Alguns trabalhos</h2>
-        <div class="galeria">
-            <img src="imagens/gaiola1.jpg" alt="Gaiola 1" />
-            <img src="imagens/gaiola2.jpg" alt="Gaiola 2" />
-            <img src="imagens/gaiola3.jpg" alt="Gaiola 3" />
-        </div>
-    </section>
+    <!-- Busca -->
+    <input type="text" id="busca" placeholder="Buscar produtos..." />
+    <button onclick="pesquisar()">🔍</button>
 
-    <section id="precos">
-        <h2>Preços</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Modelo</th>
-                    <th>Material</th>
-                    <th>Preço</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Gaiola Simples</td>
-                    <td>Ferro pintado</td>
-                    <td>R$ 80,00</td>
-                </tr>
-                <tr>
-                    <td>Gaiola Dupla</td>
-                    <td>Ferro reforçado</td>
-                    <td>R$ 120,00</td>
-                </tr>
-                <tr>
-                    <td>Gaiola com Suporte</td>
-                    <td>Ferro e madeira</td>
-                    <td>R$ 180,00</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/5511979720049" target="_blank" class="whatsapp-btn">Fale com Ricardo</a>
+  </header>
 
-    <section id="video">
-        <h2>Veja as gaiolas em ação</h2>
-        <!-- Se for do YouTube -->
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID" 
-                title="YouTube video player" frameborder="0" allowfullscreen>
-            </iframe>
-        </div>
-    </section>
+  <!-- SEÇÃO VARAIS -->
+  <section id="varais">
+    <h2>Varais</h2>
+    <div class="carrossel">
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Varal 1">
+        <h3>Varal Retrátil</h3>
+        <p>Ideal para apartamentos. 5 cordas resistentes.</p>
+        <span>R$ 89,90</span>
+        <a href="https://wa.me/5511979720049?text=Olá%20Ricardo,%20tenho%20interesse%20no%20Varal%20Retrátil" target="_blank">Comprar</a>
+      </div>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Telefone: (11) 99999-9999</p>
-        <p>Instagram: @gaiolasdojoao</p>
-    </section>
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Varal 2">
+        <h3>Varal de Parede</h3>
+        <p>Compacto e dobrável. Fácil instalação.</p>
+        <span>R$ 74,90</span>
+        <a href="https://wa.me/5511979720049?text=Tenho%20interesse%20no%20Varal%20de%20Parede" target="_blank">Comprar</a>
+      </div>
 
-    <footer>
-        <p>&copy; 2025 Gaiolas do João. Todos os direitos reservados.</p>
-    </footer>
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Varal 3">
+        <h3>Varal de Teto</h3>
+        <p>Com roldanas reforçadas. Suporta 15kg.</p>
+        <span>R$ 99,90</span>
+        <a href="https://wa.me/5511979720049?text=Quero%20saber%20mais%20sobre%20o%20Varal%20de%20Teto" target="_blank">Comprar</a>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- SEÇÃO GAIOLAS -->
+  <section id="gaiolas">
+    <h2>Gaiolas para Pássaros</h2>
+    <div class="carrossel">
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Gaiola 1">
+        <h3>Gaiola Simples</h3>
+        <p>Ferro reforçado, acabamento com pintura eletrostática.</p>
+        <span>R$ 59,90</span>
+        <a href="https://wa.me/5511979720049?text=Gostei%20da%20Gaiola%20Simples" target="_blank">Comprar</a>
+      </div>
+
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Gaiola 2">
+        <h3>Gaiola Dupla</h3>
+        <p>Espaço para dois pássaros. Portas com trava.</p>
+        <span>R$ 89,90</span>
+        <a href="https://wa.me/5511979720049?text=Quero%20a%20Gaiola%20Dupla" target="_blank">Comprar</a>
+      </div>
+
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Gaiola 3">
+        <h3>Gaiola Decorada</h3>
+        <p>Design especial, ideal para decoração rústica.</p>
+        <span>R$ 129,90</span>
+        <a href="https://wa.me/5511979720049?text=Me%20interessei%20pela%20Gaiola%20Decorada" target="_blank">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO BANQUETAS -->
+  <section id="banquetas">
+    <h2>Banquetas</h2>
+    <div class="carrossel">
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Banqueta 1">
+        <h3>Banqueta Alta</h3>
+        <p>Assento de madeira e estrutura de ferro.</p>
+        <span>R$ 119,90</span>
+        <a href="https://wa.me/5511979720049?text=Banqueta%20Alta%20me%20interessou" target="_blank">Comprar</a>
+      </div>
+
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Banqueta 2">
+        <h3>Banqueta Giratória</h3>
+        <p>Base cromada, assento acolchoado.</p>
+        <span>R$ 159,90</span>
+        <a href="https://wa.me/5511979720049?text=Tenho%20interesse%20na%20Banqueta%20Giratória" target="_blank">Comprar</a>
+      </div>
+
+      <div class="produto">
+        <img src="https://via.placeholder.com/150" alt="Banqueta 3">
+        <h3>Banqueta Baixa</h3>
+        <p>Ideal para área externa, muito resistente.</p>
+        <span>R$ 89,90</span>
+        <a href="https://wa.me/5511979720049?text=Quero%20a%20Banqueta%20Baixa" target="_blank">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>Contato: (11) 97972-0049 | Email: ricardo@email.com</p>
+    <p>© 2025 - Produtos do Ricardo</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
