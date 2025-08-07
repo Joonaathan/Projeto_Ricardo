@@ -18,7 +18,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #1e90ff; /* Azul vibrante */
+  background-color: #1e90ff;
+  /* Azul vibrante */
   color: white;
   padding: 20px;
   z-index: 1000;
@@ -84,10 +85,11 @@ button:hover {
 /* Seções */
 section {
   padding: 40px 20px;
+  margin: 20px auto;
 }
 
 section h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 28px;
   color: #1e90ff;
@@ -109,7 +111,7 @@ section h2 {
   padding: 15px;
   border-radius: 8px;
   min-width: 250px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -158,5 +160,38 @@ footer {
   background-color: #1e90ff;
   color: white;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 40px;
+}
+
+/* Ajustes especiais para celular */
+@media (max-width: 768px) {
+  .carrossel {
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 15px;
+  }
+
+  .produto {
+    min-width: 90%;
+    max-width: 90%;
+    margin-right: 10px;
+  }
+
+  .produto img {
+    width: 100%;
+  }
+
+  header {
+    padding: 15px 10px;
+  }
+
+  #busca {
+    width: 100%;
+  }
+
+  button,
+  .whatsapp-btn {
+    width: 100%;
+    margin-top: 8px;
+  }
 }
