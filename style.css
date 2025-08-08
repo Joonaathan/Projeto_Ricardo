@@ -10,188 +10,195 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: #333;
-  padding-top: 100px;
+  padding-top: 0px;
+
+  /* overflow-x: hidden;
 }
 
 /* TOPO fixo */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #1e90ff;
-  /* Azul vibrante */
-  color: white;
-  padding: 20px;
-  z-index: 1000;
-  text-align: center;
-}
+  header {
+    position: auto;
+    top: 10px;
+    width: 100%;
+    background-color: #1e90ff;
+    /* Azul vibrante */
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+  }
 
-header h1 {
-  margin-bottom: 10px;
-  font-size: 26px;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-nav a {
-  margin: 0 10px;
-  color: yellow;
-  text-decoration: none;
-  font-weight: bold;
-}
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
 
-nav a:hover {
-  text-decoration: underline;
-}
+  nav a {
+    margin: 0 10px;
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-/* Busca */
-#busca {
-  padding: 8px;
-  border: none;
-  border-radius: 4px;
-  margin-top: 10px;
-  width: 200px;
-}
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-button {
-  padding: 8px 12px;
-  margin-left: 5px;
-  border: none;
-  background-color: #ffcc00;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 4px;
-}
+  /* Busca */
+  #busca {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 200px;
+  }
 
-button:hover {
-  background-color: #ffdb4d;
-}
+  button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 
-/* WhatsApp botão */
-.whatsapp-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
+  button:hover {
+    background-color: #ffdb4d;
+  }
 
-.whatsapp-btn:hover {
-  background-color: #1ebe57;
-}
+  /* WhatsApp botão */
+  .whatsapp-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-/* Seções */
-section {
-  padding: 40px 20px;
-  margin: 20px auto;
-}
+  .whatsapp-btn:hover {
+    background-color: #1ebe57;
+  }
 
-section h2 {
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 28px;
-  color: #1e90ff;
-}
+  /* Seções */
+  section {
+    padding: 40px 40px;
+    margin: 20px auto;
+  }
 
-/* Carrossel horizontal */
-.carrossel {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 20px;
-  padding-bottom: 10px;
-}
+  section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #1e90ff;
+  }
 
-.produto {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  background-color: #f1f1f1;
-  padding: 15px;
-  border-radius: 8px;
-  min-width: 250px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.produto img {
-  width: 30%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-.produto h3 {
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.produto p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.produto span {
-  display: block;
-  font-weight: bold;
-  font-size: 18px;
-  color: #d60000;
-  margin-bottom: 10px;
-}
-
-.produto a {
-  background-color: #25D366;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
-
-.produto a:hover {
-  background-color: #1ebe57;
-}
-
-/* Rodapé */
-footer {
-  text-align: center;
-  background-color: #1e90ff;
-  color: white;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-/* Ajustes especiais para celular */
-@media (max-width: 768px) {
+  /* Carrossel horizontal */
   .carrossel {
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 15px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 10px;
   }
 
   .produto {
-    min-width: 90%;
-    max-width: 90%;
-    margin-right: 10px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
+
 
   .produto img {
-    width: 100%;
+    width: 30%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
   }
 
-  header {
-    padding: 15px 10px;
+  .produto h3 {
+    color: #333;
+    margin-bottom: 5px;
   }
 
-  #busca {
-    width: 100%;
+  .produto p {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
-  button,
-  .whatsapp-btn {
-    width: 100%;
-    margin-top: 8px;
+  .produto span {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #d60000;
+    margin-bottom: 10px;
   }
-}
+
+  .produto a {
+    background-color: #25D366;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .produto a:hover {
+    background-color: #1ebe57;
+  }
+
+  /* Rodapé */
+  footer {
+    text-align: center;
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  /* Ajustes especiais para celular */
+  @media (max-width: 768px) {
+    .carrossel {
+      padding-left: 10px;
+      padding-right: 10px;
+      gap: 15px;
+    }
+
+    .produto {
+      min-width: 100%;
+      max-width: 90%;
+      margin-right: 10px;
+    }
+
+    .produto img {
+      width: 100%;
+    }
+
+    header {
+      padding: 15px 10px;
+    }
+
+    #busca {
+      width: 100%;
+    }
+
+    button,
+    .whatsapp-btn {
+      width: 100%;
+      margin-top: 8px;
+    }
