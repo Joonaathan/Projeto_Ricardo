@@ -202,3 +202,22 @@ footer {
     margin-top: 8px;
   }
 }
+/* Botão Voltar ao Topo */
+.btn-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(30, 144, 255, 0.2); /* azul com transparência */
+  color: #1e90ff;
+  padding: 10px 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  z-index: 999;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-topo:hover {
+  background-color: rgba(30, 144, 255, 0.5);
+  transform: scale(1.1);
+}
